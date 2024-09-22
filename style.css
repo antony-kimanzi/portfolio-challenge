@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}  
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 24);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 24, 1);
+    padding: 30px;
+    z-index: 99;
+    transition: background-color 0.3s ease;
+}
+
+.navbar h2 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(245, 141, 44);
+    font-size: 44px;
+}
+
+.navbar a {
+    position: relative;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    padding-left: 10px;
+    margin-left: 40px;
+    text-decoration: none;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navbar a:hover {
+    color: rgb(245, 141, 44);
+    transform:scaleX(1);
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    right: 1px;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(245, 141, 44);
+    border-radius: 10px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navbar i {
+    color: aliceblue;
+    font-size: 38px;
+    margin-left: 100px;
+}
+
+.navbar i:hover {
+    color: rgb(245, 141, 44);
+    font-size: 38px;
+    cursor: pointer;
+}
+
+.landing {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100vh;
+    width: 90vw;
+    color :aliceblue;
+    margin: auto;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.landing div {
+    width: 45vw;
+}
+
+#landing-text {
+    font-size: 20px;
+}
+
+#landing-text h1 {
+    color: rgb(245, 141, 44);
+}
+
+#landing-text p {
+    line-height: 2.0em;
+}
+
+#landing-image {
+    text-align: center;
+}
+
+#landing-image img {
+    background-color: rgb(245, 141, 44);
+    border: none;
+    border-radius: 250px;
+}
+
+.about-me-section {
+    padding: 30px 20px;
+    color: aliceblue;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content {
+    width: 90vw;
+    line-height: 1.8em;
+}
+
+.about-content h1 {
+    font-size: 36px;
+    color: rgb(245, 141, 44);
+    margin-bottom: 80px;
+    text-decoration: 2px rgb(245, 141, 44) solid;
+}
+
+/* Indented subtopics - alternating layout */
+.subtopic {
+    margin-bottom: 150px;
+}
+
+.left-align {
+    margin-left: 30%;
+}
+
+.right-align {
+    margin-right: 30%;
+}
+
+.subtopic h2 {
+    font-size: 28px;
+    text-decoration: underline solid antiquewhite ;
+    margin-bottom: 50px;
+    color: antiquewhite;
+}
+
+.subtopic p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.subtopic ul li {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.project i {
+    color: aliceblue;
+    font-size: 38px;
+    margin-right: 20px;
+}
+
+.project i:hover {
+    color: rgb(245, 141, 44);
+    font-size: 38px;
+    cursor: pointer;
+}
+
+.contact-section {
+    color: antiquewhite;
+    padding: 50px 20px;
+}
+
+.contact-content {
+    width: 90vw;
+    margin: auto;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    color: rgb(245, 141, 44);
+    margin-bottom: 80px;
+    text-decoration: 2px rgb(245, 141, 44) solid;
+}
+
+.contact-section p {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.contact-section i {
+    color: aliceblue;
+    font-size: 38px;
+    margin-left: 20px;
+}
+
+.contact-section i:hover {
+    color: rgb(245, 141, 44);
+    font-size: 38px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+

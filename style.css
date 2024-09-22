@@ -193,6 +193,16 @@ body {
     cursor: pointer;
 }
 
+.img-links {
+    color: rgb(245, 141, 44);
+    text-decoration: none;
+}
+
+.img-links:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
 .contact-section {
     color: antiquewhite;
     padding: 50px 20px;
@@ -290,3 +300,22 @@ footer {
     width: 100%;
 }
 
+figure img {
+    width: 600px;
+}
+
+figure {
+    margin: 50px;;
+}
+
+figcaption {
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    margin: 30px;
+}
+
+.fig-hdr {
+    font-size: 36px;
+    color: aliceblue;
+}

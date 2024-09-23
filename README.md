@@ -21,7 +21,7 @@ The application works perfectly well, no bugs.
 HTML, CSS , Fontawesome icons, GIT
 
 ## Support and contact details
-email :: kelvinkipchumba002@gmail.com
+email :: antony.wambugu@student.moringaschool.com
 
 ### License
 *LIcenced under the [MT-licence](https://github.com/antony-kimanzi/portfolio-challenge/blob/main/LICENSE.md)*
